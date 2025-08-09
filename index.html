@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mafaaz Siddiqui — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="brand" aria-label="Go to top">
+        <span class="brand-mark">MS</span>
+        <span class="brand-text">Mafaaz</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="divider" aria-hidden="true"></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-sun" aria-hidden="true">☀️</span>
+            <span class="theme-moon" aria-hidden="true">🌙</span>
+            <span class="theme-bee" aria-hidden="true">🐝</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero section-focus">
+      <div class="container hero-grid reveal fade-up">
+        <div class="hero-left">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">
+            <span class="typing" data-text='Mafaaz Siddiqui'></span>
+          </h1>
+          <p class="hero-sub">
+            CS @ Georgia Tech • Full-stack engineer • AI & Cybersecurity curious
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li>
+              <!-- Email icon (inline SVG for no libs) -->
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v1l-10 6L2 7V6a2 2 0 0 1 2-2Zm18 6-10 6L2 10v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8Z"/></svg>
+              <a href="mailto:mafaaz124@gmail.com">mafaaz124@gmail.com</a>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.06c.67-1.2 2.3-2.46 4.74-2.46C21.6 7.74 24 10 24 14.3V24h-5v-8.6c0-2.05-.73-3.45-2.56-3.45-1.4 0-2.24.94-2.6 1.85-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+              <a href="https://www.linkedin.com/in/mafaaz-siddiqui/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.2 11.2.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.9.1-.9.1-.9 1.3.1 2 1.3 2 1.3 1.2 2 3.2 1.4 4 .9.1-.9.5-1.4.8-1.7-2.6-.3-5.2-1.3-5.2-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.6.1-3.4 0 0 1-.3 3.4 1.2a11.9 11.9 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.8.1 3.1.1 3.4.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.5.3.9 1.1.9 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6 8.2-11.2A11.5 11.5 0 0 0 12 .5z"/></svg>
+              <a href="https://github.com/mafaaz124" target="_blank" rel="noreferrer">GitHub</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <img src="assets/headshot.jpeg" alt="Portrait of Mafaaz Siddiqui" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-focus">
+      <div class="container">
+        <header class="section-header reveal fade-up">
+          <h2>Projects</h2>
+          <p>Things I’ve built and shipped.</p>
+        </header>
+
+        <div class="grid projects-grid">
+          <!-- Syl Campus -->
+          <article class="card project reveal fade-up" tabindex="0">
+            <img src="assets/sylcampus.png" alt="Syl Campus preview" class="project-thumb" />
+            <div class="project-body">
+              <h3>Syl Campus</h3>
+              <p>Processes syllabi with OCR + NLP to auto-generate calendar events.</p>
+              <ul class="tags">
+                <li>Python</li><li>Django</li><li>OpenAI</li><li>OCR</li>
+              </ul>
+            </div>
+            <div class="project-overlay">
+              <p>Built a multi-stage parsing pipeline (regex + pandas + custom NLP) hitting ~95% accuracy across diverse formats. Generates .ics for Google/Apple Calendar.</p>
+              <div class="project-links">
+                <a class="btn small" href="https://sylcampus.com" target="_blank" rel="noreferrer">Live</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Spotify Wrapped -->
+          <article class="card project reveal fade-up" tabindex="0">
+            <img src="assets/spotifywrapped.png" alt="Spotify Wrapped app preview" class="project-thumb" />
+            <div class="project-body">
+              <h3>Spotify Wrapped</h3>
+              <p>Full-stack app generating interactive music stats slides.</p>
+              <ul class="tags">
+                <li>Python</li><li>Django</li><li>Heroku</li>
+              </ul>
+            </div>
+            <div class="project-overlay">
+              <p>Auth via Spotify API, 10+ slides, 3 themes, 3 languages, deployed for up to 500 users.</p>
+            </div>
+          </article>
+
+          <!-- ATL Food Finder -->
+          <article class="card project reveal fade-up" tabindex="0">
+            <img src="assets/atlfoodfinder.png" alt="ATL Food Finder preview" class="project-thumb" />
+            <div class="project-body">
+              <h3>ATL Food Finder</h3>
+              <p>Restaurant finder with dynamic maps and saved favorites.</p>
+              <ul class="tags">
+                <li>Django</li><li>JS</li><li>Google Maps API</li>
+              </ul>
+            </div>
+            <div class="project-overlay">
+              <p>300+ restaurants, optimized search, front-end UX with error-proof signup & session storage.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-focus">
+      <div class="container">
+        <header class="section-header reveal fade-up">
+          <h2>Experience</h2>
+          <p>Where I’ve worked and what I built.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline-item reveal fade-left" tabindex="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <h3>AI & Software Development Intern — CirrusLabs</h3>
+              <span class="meta">May 2025 – Present • Alpharetta, GA</span>
+              <ul>
+                <li>Built a full-stack CRM (React + Django) supporting 100+ deals & 50+ user accounts.</li>
+                <li>Integrated AI speech-to-text for voice-created deals; improved LockThreat demo site.</li>
+                <li>Enhanced UI responsiveness and resolved backend integration issues.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal fade-right" tabindex="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <h3>Cybersecurity Research Assistant — Georgia Tech VIP</h3>
+              <span class="meta">Jan 2025 – Present • Atlanta, GA</span>
+              <ul>
+                <li>Processed eye-tracking data; built heatmaps & time-series visualizations.</li>
+                <li>Tracked gaze intersections across 30+ simulator objects; quantified attention.</li>
+                <li>Analyzing EEG/ECG to study human-automation interaction & attention levels.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal fade-left" tabindex="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <h3>Coding Instructor — Code Ninjas</h3>
+              <span class="meta">Jun 2023 – Sept 2024 • Alpharetta, GA</span>
+              <ul>
+                <li>Taught 20+ students foundational programming (JS, C#, block coding).</li>
+                <li>1-on-1 coaching to overcome coding challenges and build problem-solving skills.</li>
+                <li>Led 10+ camps: Minecraft modding, Roblox dev, 3D printing.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-focus">
+  <div class="container">
+    <header class="section-header reveal fade-up">
+      <h2>Technical Skills</h2>
+      <p>Tools and expertise that define my work</p>
+    </header>
+
+    <div class="skills-two reveal fade-up">
+      <!-- LEFT: Core Competencies (progress bars) -->
+      <article class="card skills-pane">
+        <h3>Core Competencies</h3>
+
+        <div class="meter">
+          <div class="meter-row">
+            <span class="label">Python</span>
+            <span class="level">Expert</span>
+          </div>
+          <div class="bar" data-percent="92"><span></span></div>
+        </div>
+
+        <div class="meter">
+          <div class="meter-row">
+            <span class="label">AI / ML</span>
+            <span class="level">Advanced</span>
+          </div>
+          <div class="bar" data-percent="78"><span></span></div>
+        </div>
+
+        <div class="meter">
+          <div class="meter-row">
+            <span class="label">Django</span>
+            <span class="level">Advanced</span>
+          </div>
+          <div class="bar" data-percent="82"><span></span></div>
+        </div>
+
+        <div class="meter">
+          <div class="meter-row">
+            <span class="label">React</span>
+            <span class="level">Proficient</span>
+          </div>
+          <div class="bar" data-percent="70"><span></span></div>
+        </div>
+
+        <div class="meter">
+          <div class="meter-row">
+            <span class="label">SQL</span>
+            <span class="level">Advanced</span>
+          </div>
+          <div class="bar" data-percent="76"><span></span></div>
+        </div>
+      </article>
+
+      <!-- RIGHT: Tools & Technologies (icon chips) -->
+      <article class="card skills-pane">
+        <h3>Tools & Technologies</h3>
+
+        <div class="chip-group">
+          <!-- Minimal inline SVGs so no libraries needed -->
+          <button class="chip" title="Python">
+            <span class="i">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 2h5a3.5 3.5 0 0 1 3.5 3.5V9H9a3 3 0 0 1-3-3V5.5A3.5 3.5 0 0 1 9.5 2Z"/><circle cx="15.5" cy="5.5" r="1.1"/></svg>
+            </span><span>Python</span>
+          </button>
+
+          <button class="chip" title="Java"><span class="i">☕</span><span>Java</span></button>
+          <button class="chip" title="JavaScript"><span class="i">JS</span><span>JavaScript</span></button>
+          <button class="chip" title="React"><span class="i">⚛︎</span><span>React</span></button>
+
+          <button class="chip" title="Django">
+            <span class="i">🟩</span><span>Django</span>
+          </button>
+
+          <button class="chip" title="SQL">
+            <span class="i">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c5 0 9 1.8 9 4v12c0 2.2-4 4-9 4s-9-1.8-9-4V6c0-2.2 4-4 9-4Z"/></svg>
+            </span><span>SQL</span>
+          </button>
+
+          <button class="chip" title="Git"><span class="i">🔺</span><span>Git</span></button>
+          <button class="chip" title="C/C++"><span class="i">C</span><span>C/C++</span></button>
+          <button class="chip" title="Assembly"><span class="i">⌁</span><span>Assembly</span></button>
+          <button class="chip" title="LLM"><span class="i">🤖</span><span>LLM</span></button>
+          <button class="chip" title="NLP"><span class="i">🗣️</span><span>NLP</span></button>
+          <button class="chip" title="OCR"><span class="i">👁️</span><span>OCR</span></button>
+          <button class="chip" title="HTML/CSS"><span class="i">≋</span><span>HTML/CSS</span></button>
+          <button class="chip" title="Flask"><span class="i">🧪</span><span>Flask</span></button>
+          <button class="chip" title="Full Stack"><span class="i">🧱</span><span>Full Stack</span></button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-focus">
+      <div class="container reveal fade-up">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Let’s build something great.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card card">
+            <ul class="contact-links">
+              <li><a href="mailto:mafaaz124@gmail.com">mafaaz124@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/mafaaz-siddiqui/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/mafaaz124" target="_blank" rel="noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form card" action="https://formspree.io/f/your-form-id" method="POST">
+            <!-- Replace your-form-id with your Formspree ID -->
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="_replyto" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send</button>
+            <input type="hidden" name="_subject" value="Portfolio Contact" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mafaaz Siddiqui • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
