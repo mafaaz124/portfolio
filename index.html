@@ -8,12 +8,18 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="assets/favicon.png" />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/ms.png" />
 </head>
 <body>
   <!-- Scroll Progress Bar -->
@@ -24,7 +30,7 @@
     <nav class="nav container">
       <a href="#hero" class="brand" aria-label="Go to top">
         <span class="brand-mark">MS</span>
-        <span class="brand-text">Mafaaz</span>
+        <span class="brand-text">Mafaaz Siddiqui</span>
       </a>
 
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -33,16 +39,16 @@
 
       <ul class="nav-links">
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
         <li class="divider" aria-hidden="true"></li>
         <li>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-            <span class="theme-sun" aria-hidden="true">☀️</span>
-            <span class="theme-moon" aria-hidden="true">🌙</span>
-            <span class="theme-bee" aria-hidden="true">🐝</span>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
           </button>
+          
         </li>
       </ul>
     </nav>
@@ -64,23 +70,23 @@
             <a class="btn primary" href="#projects">See Projects</a>
             <a class="btn ghost" href="#contact">Contact Me</a>
           </div>
+          <!-- Social buttons -->
+          <div class="hero-social">
+            <a class="social-btn social-btn--mail" href="mailto:mafaaz124@gmail.com" aria-label="Email Mafaaz">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Email</span>
+            </a>
 
-          <ul class="hero-meta">
-            <li>
-              <!-- Email icon (inline SVG for no libs) -->
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v1l-10 6L2 7V6a2 2 0 0 1 2-2Zm18 6-10 6L2 10v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8Z"/></svg>
-              <a href="mailto:mafaaz124@gmail.com">mafaaz124@gmail.com</a>
-            </li>
-            <li>
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.06c.67-1.2 2.3-2.46 4.74-2.46C21.6 7.74 24 10 24 14.3V24h-5v-8.6c0-2.05-.73-3.45-2.56-3.45-1.4 0-2.24.94-2.6 1.85-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
-              <a href="https://www.linkedin.com/in/mafaaz-siddiqui/" target="_blank" rel="noreferrer">LinkedIn</a>
-            </li>
-            <li>
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.2 11.2.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.9.1-.9.1-.9 1.3.1 2 1.3 2 1.3 1.2 2 3.2 1.4 4 .9.1-.9.5-1.4.8-1.7-2.6-.3-5.2-1.3-5.2-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.6.1-3.4 0 0 1-.3 3.4 1.2a11.9 11.9 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.8.1 3.1.1 3.4.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.5.3.9 1.1.9 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6 8.2-11.2A11.5 11.5 0 0 0 12 .5z"/></svg>
-              <a href="https://github.com/mafaaz124" target="_blank" rel="noreferrer">GitHub</a>
-            </li>
+            <a class="social-btn social-btn--gh" href="https://github.com/mafaaz124" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
+              <i class="devicon-github-original" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
 
-          </ul>
+            <a class="social-btn social-btn--li" href="https://www.linkedin.com/in/mafaaz-siddiqui/" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile">
+              <i class="devicon-linkedin-plain colored" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </div>
         </div>
 
         <div class="hero-right">
@@ -91,65 +97,152 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section section-focus">
-      <div class="container">
-        <header class="section-header reveal fade-up">
-          <h2>Projects</h2>
-          <p>Things I’ve built and shipped.</p>
-        </header>
+<!-- Projects Section -->
+<section id="projects" class="section section-focus">
+  <div class="container">
+    <header class="section-header reveal fade-up">
+      <h2>Projects</h2>
+      <p>Innovative solutions combining AI, full-stack development, and creative problem-solving.</p>
+    </header>
 
-        <div class="grid projects-grid">
-          <!-- Syl Campus -->
-          <article class="card project reveal fade-up" tabindex="0">
-            <img src="assets/sylcampus.png" alt="Syl Campus preview" class="project-thumb" />
-            <div class="project-body">
-              <h3>Syl Campus</h3>
-              <p>Processes syllabi with OCR + NLP to auto-generate calendar events.</p>
-              <ul class="tags">
-                <li>Python</li><li>Django</li><li>OpenAI</li><li>OCR</li>
+    <div class="ms-projects-grid">
+            <!-- Project 1 -->
+            <article class="ms-project-card" tabindex="0" aria-label="Syl project card">
+              <!-- Screenshot layer (no scrim) -->
+              <div class="ms-project-photo">
+                <img src="assets/crm.png" alt="Syl Campus screenshot">
+              </div>
+      
+            <!-- Content -->
+            <div class="ms-project-body">
+              <h3 class="ms-project-title">CirrusLabs CRM</h3>
+              <p class="ms-project-desc">
+                Full-stack CRM that manages pipelines, accounts, and deals 
+                with AI speech-to-text for voice-created deals.
+              </p>
+              <ul class="ms-project-tags">
+                <li data-tech="React">React</li>
+                <li data-tech="Django">Django</li>
+                <li data-tech="OpenAI">OpenAI</li>
+                <li data-tech="Google Maps API">Google STT</li>
               </ul>
-            </div>
-            <div class="project-overlay">
-              <p>Built a multi-stage parsing pipeline (regex + pandas + custom NLP) hitting ~95% accuracy across diverse formats. Generates .ics for Google/Apple Calendar.</p>
-              <div class="project-links">
-                <a class="btn small" href="https://sylcampus.com" target="_blank" rel="noreferrer">Live</a>
+              <div class="ms-project-links">
+                <a class="ms-btn" href="#" target="_blank" rel="noreferrer">View</a>
               </div>
             </div>
-          </article>
+            </article>
 
-          <!-- Spotify Wrapped -->
-          <article class="card project reveal fade-up" tabindex="0">
-            <img src="assets/spotifywrapped.png" alt="Spotify Wrapped app preview" class="project-thumb" />
-            <div class="project-body">
-              <h3>Spotify Wrapped</h3>
-              <p>Full-stack app generating interactive music stats slides.</p>
-              <ul class="tags">
-                <li>Python</li><li>Django</li><li>Heroku</li>
-              </ul>
-            </div>
-            <div class="project-overlay">
-              <p>Auth via Spotify API, 10+ slides, 3 themes, 3 languages, deployed for up to 500 users.</p>
-            </div>
-          </article>
+      <!-- Project 2 -->
+      <article class="ms-project-card" tabindex="0" aria-label="Syl project card">
+        <!-- Screenshot layer (no scrim) -->
+        <div class="ms-project-photo">
+          <img src="assets/syl.png" alt="Syl Campus screenshot">
+        </div>
 
-          <!-- ATL Food Finder -->
-          <article class="card project reveal fade-up" tabindex="0">
-            <img src="assets/atlfoodfinder.png" alt="ATL Food Finder preview" class="project-thumb" />
-            <div class="project-body">
-              <h3>ATL Food Finder</h3>
-              <p>Restaurant finder with dynamic maps and saved favorites.</p>
-              <ul class="tags">
-                <li>Django</li><li>JS</li><li>Google Maps API</li>
-              </ul>
-            </div>
-            <div class="project-overlay">
-              <p>300+ restaurants, optimized search, front-end UX with error-proof signup & session storage.</p>
-            </div>
-          </article>
+        <!-- Card content -->
+        <div class="ms-project-body">
+          <h3 class="ms-project-title">Syl</h3>
+          <p class="ms-project-desc">
+            AI-powered platform that parses syllabi to keep students organized.
+          </p>
+          <ul class="ms-project-tags">
+            <li data-tech="Python">Python</li>
+            <li data-tech="Django">Django</li>
+            <li data-tech="HTML/CSS">HTML/CSS</li>
+            <li data-tech="OpenAI">OpenAI</li>
+          </ul>
+          <div class="ms-project-links">
+            <a class="ms-btn" href="https://sylcampus.com" target="_blank" rel="noreferrer">View</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="ms-project-card" tabindex="0" aria-label="Spotify Wrapped project card">
+        <div class="ms-project-photo">
+          <img src="assets/spotifyss.png" alt="Spotify Wrapped screenshot">
+        </div>
+        <div class="ms-project-body">
+          <h3 class="ms-project-title">Spotify Wrapped</h3>
+          <p class="ms-project-desc">
+            Full-stack app generating interactive music stats slides.
+          </p>
+          <ul class="ms-project-tags">
+            <li data-tech="Python">Python</li>
+            <li data-tech="HTML/CSS">HTML/CSS</li>
+            <li data-tech="Heroku">Heroku</li>
+            <li data-tech="Spotify API">Spotify API</li>
+          </ul>
+          <div class="ms-project-links">
+            <a class="ms-btn" href="https://spotifywrapped35-7ed41b719d25.herokuapp.com/" target="_blank" rel="noreferrer">View</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="ms-project-card" tabindex="0" aria-label="ATL Food Finder project card">
+        <div class="ms-project-photo">
+          <img src="assets/atlfoodfinder.png" alt="ATL Food Finder screenshot">
+        </div>
+        <div class="ms-project-body">
+          <h3 class="ms-project-title">ATL Food Finder</h3>
+          <p class="ms-project-desc">
+            Restaurant finder with dynamic maps and saved favorites.
+          </p>
+          <ul class="ms-project-tags">
+            <li data-tech="Python">Python</li>
+            <li data-tech="Django">Django</li>
+            <li data-tech="JavaScript">JavaScript</li>
+            <li data-tech="Google Maps API">Google Maps API</li>
+          </ul>
+          <div class="ms-project-links">
+            <a class="ms-btn" href="https://atlfoodfind.github.io/atlFoodFinder/index.html" target="_blank" rel="noreferrer">View</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- EDUCATION -->
+<section id="education" class="section section-focus">
+  <div class="container">
+    <header class="section-header reveal fade-up">
+      <h2>Education</h2>
+      <p>My academic background and relevant coursework.</p>
+    </header>
+
+    <div class="education-content reveal fade-up">
+      <div class="edu-header">
+        <img src="assets/gtlogo.png" alt="Georgia Tech Logo" class="edu-logo" />
+        <div>
+          <h3>Georgia Institute of Technology</h3>
+          <p>Bachelor of Science in Computer Science</p>
+          <p class="edu-meta">Expected Graduation: Dec. 2026 • Atlanta, GA</p>
         </div>
       </div>
-    </section>
+
+      <p class="edu-description">
+        I'm currently working towards completing my CS degree at Georgia Tech with a concentration in Intelligence and 
+        Cybersecurity & Privacy. I’ve been applying concepts from courses and personal projects to gain hands-on 
+        experience with Django, Python, Java, JavaScript, and more. This includes developing full-stack 
+        applications, working with APIs, and exploring AI-driven solutions.
+      </p>
+
+      <div class="courses-grid">
+        <div class="course">CS 1332 – Data Structures & Algorithms</div>
+        <div class="course">CS 2340 – Objects and Design</div>
+        <div class="course">CS 2110 – Computer Organization & Programming</div>
+        <div class="course">CS 3237 – Human Dimension of Cybersecurity</div>
+        <div class="course">CS 3600 – Intro to Artificial Intelligence</div>
+        <div class="course">CS 3510 – Design & Analysis of Algorithms</div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section section-focus">
@@ -163,46 +256,59 @@
           <article class="timeline-item reveal fade-left" tabindex="0">
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
-              <h3>AI & Software Development Intern — CirrusLabs</h3>
-              <span class="meta">May 2025 – Present • Alpharetta, GA</span>
-              <ul>
-                <li>Built a full-stack CRM (React + Django) supporting 100+ deals & 50+ user accounts.</li>
-                <li>Integrated AI speech-to-text for voice-created deals; improved LockThreat demo site.</li>
-                <li>Enhanced UI responsiveness and resolved backend integration issues.</li>
-              </ul>
+              <!-- NEW: logo on the left -->
+              <img src="assets/cirruslabs_logo.jpeg" alt="CirrusLabs logo" class="timeline-logo" />
+          
+              <!-- Body (existing content) -->
+              <div>
+                <h3>AI & Software Development Intern — CirrusLabs</h3>
+                <span class="meta">May 2025 – Present • Alpharetta, GA</span>
+                <ul>
+                  <li>Built a full-stack CRM (React + Django) supporting 100+ deals & 50+ user accounts.</li>
+                  <li>Integrated AI speech-to-text for voice-created deals; improved LockThreat demo site.</li>
+                  <li>Enhanced UI responsiveness and resolved backend integration issues.</li>
+                </ul>
+              </div>
             </div>
           </article>
-
+          
           <article class="timeline-item reveal fade-right" tabindex="0">
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
-              <h3>Cybersecurity Research Assistant — Georgia Tech VIP</h3>
-              <span class="meta">Jan 2025 – Present • Atlanta, GA</span>
-              <ul>
-                <li>Processed eye-tracking data; built heatmaps & time-series visualizations.</li>
-                <li>Tracked gaze intersections across 30+ simulator objects; quantified attention.</li>
-                <li>Analyzing EEG/ECG to study human-automation interaction & attention levels.</li>
-              </ul>
+              <img src="assets/vip.jpeg" alt="Georgia Tech VIP logo" class="timeline-logo" />
+              <div>
+                <h3>Cybersecurity Research Assistant — Georgia Tech VIP</h3>
+                <span class="meta">Jan 2025 – Present • Atlanta, GA</span>
+                <ul>
+                  <li>Processed eye-tracking data; built heatmaps & time-series visualizations.</li>
+                  <li>Tracked gaze intersections across 30+ simulator objects; quantified attention.</li>
+                  <li>Analyzing EEG/ECG to study human-automation interaction & attention levels.</li>
+                </ul>
+              </div>
             </div>
           </article>
-
+          
           <article class="timeline-item reveal fade-left" tabindex="0">
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
-              <h3>Coding Instructor — Code Ninjas</h3>
-              <span class="meta">Jun 2023 – Sept 2024 • Alpharetta, GA</span>
-              <ul>
-                <li>Taught 20+ students foundational programming (JS, C#, block coding).</li>
-                <li>1-on-1 coaching to overcome coding challenges and build problem-solving skills.</li>
-                <li>Led 10+ camps: Minecraft modding, Roblox dev, 3D printing.</li>
-              </ul>
+              <img src="assets/codeninjas_logo.jpeg" alt="Code Ninjas logo" class="timeline-logo" />
+              <div>
+                <h3>Coding Instructor — Code Ninjas</h3>
+                <span class="meta">Jun 2023 – Sept 2024 • Alpharetta, GA</span>
+                <ul>
+                  <li>Taught 20+ students foundational programming (JS, C#, block coding).</li>
+                  <li>1-on-1 coaching to overcome coding challenges and build problem-solving skills.</li>
+                  <li>Led 10+ camps: Minecraft modding, Roblox dev, 3D printing.</li>
+                </ul>
+              </div>
             </div>
           </article>
+          
         </div>
       </div>
     </section>
 
-<!-- SKILLS -->
+<!-- SKILLS (Advanced) -->
 <section id="skills" class="section section-focus">
   <div class="container">
     <header class="section-header reveal fade-up">
@@ -210,92 +316,153 @@
       <p>Tools and expertise that define my work</p>
     </header>
 
-    <div class="skills-two reveal fade-up">
-      <!-- LEFT: Core Competencies (progress bars) -->
-      <article class="card skills-pane">
-        <h3>Core Competencies</h3>
+    <div class="skills-adv reveal fade-up">
+      <!-- PART 1 — Languages & Frameworks (5-step meters) -->
+      <article class="card skills-adv__pane">
+        <h3>Languages &amp; Frameworks</h3>
 
-        <div class="meter">
-          <div class="meter-row">
-            <span class="label">Python</span>
-            <span class="level">Expert</span>
+        <!-- Python -->
+        <div class="meter5 skill skill--python" data-level="5" aria-label="Python skill level 5 out of 5">
+          <div class="meter5__row">
+            <span class="meter5__label">Python</span>
+            <span class="meter5__level">Proficient</span>
           </div>
-          <div class="bar" data-percent="92"><span></span></div>
+          <div class="meter5__bar" role="img" aria-labelledby="python-desc">
+            <span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+          </div>
+          <p id="python-desc" class="sr-only">Proficient</p>
         </div>
 
-        <div class="meter">
-          <div class="meter-row">
-            <span class="label">AI / ML</span>
-            <span class="level">Advanced</span>
+        <!-- Java -->
+        <div class="meter5 skill skill--java" data-level="3" aria-label="Java skill level 3 out of 5">
+          <div class="meter5__row">
+            <span class="meter5__label">Java</span>
+            <span class="meter5__level">Intermediate</span>
           </div>
-          <div class="bar" data-percent="78"><span></span></div>
+          <div class="meter5__bar" role="img" aria-labelledby="java-desc">
+            <span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+          </div>
+          <p id="java-desc" class="sr-only">Intermediate</p>
         </div>
 
-        <div class="meter">
-          <div class="meter-row">
-            <span class="label">Django</span>
-            <span class="level">Advanced</span>
+        <!-- React -->
+        <div class="meter5 skill skill--react" data-level="3" aria-label="React skill level 3 out of 5">
+          <div class="meter5__row">
+            <span class="meter5__label">React</span>
+            <span class="meter5__level">Intermediate</span>
           </div>
-          <div class="bar" data-percent="82"><span></span></div>
+          <div class="meter5__bar" role="img" aria-labelledby="react-desc">
+            <span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+          </div>
+          <p id="react-desc" class="sr-only">Intermediate</p>
         </div>
 
-        <div class="meter">
-          <div class="meter-row">
-            <span class="label">React</span>
-            <span class="level">Proficient</span>
+        <!-- Django -->
+        <div class="meter5 skill skill--django" data-level="4" aria-label="Django skill level 4 out of 5">
+          <div class="meter5__row">
+            <span class="meter5__label">Django</span>
+            <span class="meter5__level">Advanced</span>
           </div>
-          <div class="bar" data-percent="70"><span></span></div>
+          <div class="meter5__bar" role="img" aria-labelledby="django-desc">
+            <span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+          </div>
+          <p id="django-desc" class="sr-only">Advanced</p>
         </div>
 
-        <div class="meter">
-          <div class="meter-row">
-            <span class="label">SQL</span>
-            <span class="level">Advanced</span>
+        <!-- HTML/CSS -->
+        <div class="meter5 skill skill--htmlcss" data-level="4" aria-label="HTML/CSS skill level 4 out of 5">
+          <div class="meter5__row">
+            <span class="meter5__label">HTML/CSS</span>
+            <span class="meter5__level">Advanced</span>
           </div>
-          <div class="bar" data-percent="76"><span></span></div>
+          <div class="meter5__bar" role="img" aria-labelledby="htmlcss-desc">
+            <span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
+          </div>
+          <p id="htmlcss-desc" class="sr-only">Advanced</p>
+        </div>
+
+        <!-- Scale legend -->
+        <div class="meter5__legend" aria-hidden="true">
+          <span>Beginner</span>
+          <span>Proficient</span>
         </div>
       </article>
+<!-- PART 2 — Tools Grid with Icons -->
+<article class="card skills-adv__pane">
+  <h3>Tools</h3>
 
-      <!-- RIGHT: Tools & Technologies (icon chips) -->
-      <article class="card skills-pane">
-        <h3>Tools & Technologies</h3>
+  <ul class="tools-grid" aria-label="Tooling">
+    <!-- Languages & Frameworks -->
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy" />
+      <span>Python</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" loading="lazy" />
+      <span>Django</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" loading="lazy" />
+      <span>Java</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" loading="lazy" />
+      <span>React</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" />
+      <span>JavaScript</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" loading="lazy" />
+      <span>HTML5</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" loading="lazy" />
+      <span>CSS3</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg" alt="Heroku" loading="lazy" />
+      <span>Heroku</span>
+    </li>
 
-        <div class="chip-group">
-          <!-- Minimal inline SVGs so no libraries needed -->
-          <button class="chip" title="Python">
-            <span class="i">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 2h5a3.5 3.5 0 0 1 3.5 3.5V9H9a3 3 0 0 1-3-3V5.5A3.5 3.5 0 0 1 9.5 2Z"/><circle cx="15.5" cy="5.5" r="1.1"/></svg>
-            </span><span>Python</span>
-          </button>
+    <!-- Tooling / Platforms -->
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" loading="lazy" />
+      <span>Git</span>
+    </li>
+    <li class="tool reveal-tool"><i class="devicon-github-original"></i><span>GitHub</span></li>    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy" />
+      <span>VS Code</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" loading="lazy" />
+      <span>Bootstrap</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase" loading="lazy" />
+      <span>Firebase</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" loading="lazy" />
+      <span>Google Cloud</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-plain.svg" alt="JUnit" loading="lazy" />
+      <span>JUnit</span>
+    </li>
+    <li class="tool reveal-tool">
+      <img class="tool-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" loading="lazy" />
+      <span>Figma</span>
+    </li>
+  </ul>
+</article>
 
-          <button class="chip" title="Java"><span class="i">☕</span><span>Java</span></button>
-          <button class="chip" title="JavaScript"><span class="i">JS</span><span>JavaScript</span></button>
-          <button class="chip" title="React"><span class="i">⚛︎</span><span>React</span></button>
 
-          <button class="chip" title="Django">
-            <span class="i">🟩</span><span>Django</span>
-          </button>
-
-          <button class="chip" title="SQL">
-            <span class="i">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c5 0 9 1.8 9 4v12c0 2.2-4 4-9 4s-9-1.8-9-4V6c0-2.2 4-4 9-4Z"/></svg>
-            </span><span>SQL</span>
-          </button>
-
-          <button class="chip" title="Git"><span class="i">🔺</span><span>Git</span></button>
-          <button class="chip" title="C/C++"><span class="i">C</span><span>C/C++</span></button>
-          <button class="chip" title="Assembly"><span class="i">⌁</span><span>Assembly</span></button>
-          <button class="chip" title="LLM"><span class="i">🤖</span><span>LLM</span></button>
-          <button class="chip" title="NLP"><span class="i">🗣️</span><span>NLP</span></button>
-          <button class="chip" title="OCR"><span class="i">👁️</span><span>OCR</span></button>
-          <button class="chip" title="HTML/CSS"><span class="i">≋</span><span>HTML/CSS</span></button>
-          <button class="chip" title="Flask"><span class="i">🧪</span><span>Flask</span></button>
-          <button class="chip" title="Full Stack"><span class="i">🧱</span><span>Full Stack</span></button>
-        </div>
-      </article>
     </div>
   </div>
 </section>
+
 
 
     <!-- CONTACT -->
@@ -306,32 +473,40 @@
           <p>Let’s build something great.</p>
         </header>
 
-        <div class="contact-grid">
-          <div class="contact-card card">
-            <ul class="contact-links">
-              <li><a href="mailto:mafaaz124@gmail.com">mafaaz124@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/in/mafaaz-siddiqui/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://github.com/mafaaz124" target="_blank" rel="noreferrer">GitHub</a></li>
-            </ul>
-          </div>
+<!-- Social cards (Font Awesome version) -->
+<div class="ms-cards" id="ms-cards">
+  <!-- LinkedIn -->
+  <a class="ms-card ms-li" href="https://www.linkedin.com/in/mafaaz-siddiqui/" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile">
+    <div class="ms-card__inner">
+      <i class="fa-brands fa-linkedin-in ms-card__icon-fa" aria-hidden="true"></i>
+      <h3>LinkedIn</h3>
+      <p>Connect with me</p>
+      <span class="ms-btn">Connect</span>
+    </div>
+  </a>
 
-          <form class="contact-form card" action="https://formspree.io/f/your-form-id" method="POST">
-            <!-- Replace your-form-id with your Formspree ID -->
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="_replyto" placeholder="you@example.com" required />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-            </label>
-            <button class="btn primary" type="submit">Send</button>
-            <input type="hidden" name="_subject" value="Portfolio Contact" />
-          </form>
+  <!-- GitHub -->
+  <a class="ms-card ms-gh" href="https://github.com/mafaaz124" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
+    <div class="ms-card__inner">
+      <i class="fa-brands fa-github ms-card__icon-fa" aria-hidden="true"></i>
+      <h3>GitHub</h3>
+      <p>Check my work</p>
+      <span class="ms-btn">Follow</span>
+    </div>
+  </a>
+
+  <!-- Email -->
+  <a class="ms-card" href="mailto:mafaaz124@gmail.com" aria-label="Email Mafaaz">
+    <div class="ms-card__inner">
+      <i class="fa-solid fa-envelope ms-card__icon-fa" aria-hidden="true"></i>
+      <h3>Email</h3>
+      <p>mafaaz124@gmail.com</p>
+      <span class="ms-btn">Send Email</span>
+    </div>
+  </a>
+</div>
+
+
         </div>
       </div>
     </section>
@@ -339,7 +514,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Mafaaz Siddiqui • Built with HTML, CSS & JS</p>
+      <p>© <span id="year"></span> Mafaaz Siddiqui • Built with HTML, CSS, & JS</p>
     </div>
   </footer>
 
